@@ -78,7 +78,6 @@ if __name__ == '__main__':
     process_consumer.start()
 
     process_producer.join()
-    process_consumer.join()
-        
+    process_consumer.join()        
     end_time = time.time()
     print(" Tiempo Procesos={:,.2f}".format((end_time - start_time)))
