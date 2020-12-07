@@ -13,7 +13,7 @@ class Proceso():
         self.costoNissan=0.0
         self.costoDodge=0.0
     def run(self) :
-        with open(r"C:\Users\TRIGUN\Desktop\UPS_OCTAVO\COMPUTO_PARALELO\Python-Parallel-Programming-Cookbook-Second-Edition\Tarea\vehiculos.json") as file:
+        with open(r"C:\Users\TRIGUN\Desktop\UPS_OCTAVO\COMPUTO_PARALELO\Python-Parallel-Programming-Cookbook-Second-Edition\Tarea\vehiculos5000.json") as file:
             data = json.load(file)            
 
         for vehiculos in data['vehiculos']:

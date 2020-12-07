@@ -1,6 +1,7 @@
 import numpy as np
 from mpi4py import MPI 
 import json
+import sys
 import time
 comm = MPI.COMM_WORLD 
 rank = comm.rank
@@ -18,7 +19,6 @@ for vehiculos in data['vehiculos']:
     lisAux.append(vehiculos['costo'])
     listTemp.append(lisAux)
 
-#lista=np.zeros(4,dtype=np.int)#formato de salida
 lista=np.zeros(5,dtype=np.float)#formato de salida
 recvdata=lista
 #lista1=np.zeros(4,dtype=np.int)#formato de salida    
